@@ -1,0 +1,70 @@
+Pre-computing position pools...
+Placing microphones (Strategy 1: Uniform Spread, N=40)...
+
+========================================================
+  BATCH SIMULATION — DEBUG MODE
+========================================================
+  Strategy    : Uniform Spread
+  Elephants   : 20
+  Poachers    : 10
+  Microphones : 40 (placed: 40)
+  Trials      : 40
+  Max sim-days: 3
+  SIM_DT      : 250.0 sim-seconds/step
+  Poach prob  : 0.85  |  Detect prob: 0.90
+========================================================
+
+Trial  Poached      Neutralized  Time 1st Poach     Time 1st Neutral   Total Time      
+------------------------------------------------------------------------------------
+1      3 / 20       2 / 10       1.28 days          1.57 days          3.00 days       
+2      2 / 20       3 / 10       0.60 days          0.94 days          3.00 days       
+3      1 / 20       4 / 10       0.66 days          0.41 days          3.00 days       
+4      0 / 20       3 / 10       ---                0.54 days          3.00 days       
+5      1 / 20       4 / 10       0.19 days          0.75 days          3.00 days       
+6      2 / 20       2 / 10       2.31 days          0.25 days          3.00 days       
+7      2 / 20       3 / 10       0.71 days          0.01 days          3.00 days       
+8      1 / 20       2 / 10       0.26 days          2.22 days          3.00 days       
+9      0 / 20       5 / 10       ---                0.26 days          3.00 days       
+10     1 / 20       2 / 10       2.53 days          1.11 days          3.00 days       
+11     1 / 20       3 / 10       1.16 days          0.99 days          3.00 days       
+12     0 / 20       5 / 10       ---                0.65 days          3.00 days       
+13     2 / 20       1 / 10       1.33 days          0.14 days          3.00 days       
+14     2 / 20       2 / 10       1.22 days          0.95 days          3.00 days       
+15     2 / 20       2 / 10       0.31 days          1.63 days          3.00 days       
+16     1 / 20       5 / 10       1.92 days          1.52 days          3.00 days       
+17     2 / 20       3 / 10       0.09 days          1.80 days          3.00 days       
+18     0 / 20       3 / 10       ---                0.85 days          3.00 days       
+19     3 / 20       0 / 10       0.45 days          ---                3.00 days       
+20     1 / 20       2 / 10       0.25 days          1.21 days          3.00 days       
+21     1 / 20       2 / 10       0.52 days          1.06 days          3.00 days       
+22     1 / 20       2 / 10       1.41 days          0.38 days          3.00 days       
+23     3 / 20       1 / 10       0.25 days          1.02 days          3.00 days       
+24     1 / 20       4 / 10       1.90 days          0.04 days          3.00 days       
+25     0 / 20       2 / 10       ---                0.83 days          3.00 days       
+26     1 / 20       1 / 10       0.44 days          2.58 days          3.00 days       
+27     1 / 20       3 / 10       1.93 days          0.30 days          3.00 days       
+28     4 / 20       2 / 10       0.15 days          1.31 days          3.00 days       
+29     1 / 20       3 / 10       1.55 days          1.07 days          3.00 days       
+30     1 / 20       3 / 10       2.42 days          0.33 days          3.00 days       
+31     1 / 20       3 / 10       1.41 days          0.65 days          3.00 days       
+32     1 / 20       2 / 10       1.59 days          0.21 days          3.00 days       
+33     1 / 20       0 / 10       0.43 days          ---                3.00 days       
+34     1 / 20       0 / 10       0.72 days          ---                3.00 days       
+35     1 / 20       2 / 10       2.93 days          1.76 days          3.00 days       
+36     1 / 20       2 / 10       0.12 days          1.31 days          3.00 days       
+37     1 / 20       3 / 10       0.16 days          0.43 days          3.00 days       
+38     1 / 20       5 / 10       0.08 days          0.73 days          3.00 days       
+39     5 / 20       1 / 10       0.86 days          1.01 days          3.00 days       
+40     1 / 20       1 / 10       0.39 days          0.37 days          3.00 days       
+
+====================================================================================
+  SUMMARY — Uniform Spread  |  40 Mics  |  40 Trials
+====================================================================================
+  Elephants poached    — Mean: 6.9%  |  Std: 5.3%  |  Min: 0%  |  Max: 25%
+  Poachers neutralized — Mean: 24.5%  |  Std: 13.2%  |  Min: 0%  |  Max: 50%
+  Time to 1st poach    — Mean: 0.99 days  |  Std: 0.81  |  Min: 0.08  |  Max: 2.93  (35/40 trials)
+  Time to 1st neutral  — Mean: 0.90 days  |  Std: 0.61  |  Min: 0.01  |  Max: 2.58  (37/40 trials)
+  Total sim-time       — Mean: 3.00 days  |  Std: 0.00  |  Min: 3.00  |  Max: 3.00
+====================================================================================
+
+Results saved to workspace variable: results

@@ -1,0 +1,70 @@
+Pre-computing position pools...
+Placing microphones (Strategy 3: Perimeter Defense, N=40)...
+
+========================================================
+  BATCH SIMULATION — DEBUG MODE
+========================================================
+  Strategy    : Perimeter Defense
+  Elephants   : 20
+  Poachers    : 10
+  Microphones : 40 (placed: 39)
+  Trials      : 40
+  Max sim-days: 3
+  SIM_DT      : 250.0 sim-seconds/step
+  Poach prob  : 0.85  |  Detect prob: 0.90
+========================================================
+
+Trial  Poached      Neutralized  Time 1st Poach     Time 1st Neutral   Total Time      
+------------------------------------------------------------------------------------
+1      1 / 20       0 / 10       1.94 days          ---                3.00 days       
+2      1 / 20       1 / 10       0.03 days          0.91 days          3.00 days       
+3      2 / 20       0 / 10       0.36 days          ---                3.00 days       
+4      3 / 20       0 / 10       0.18 days          ---                3.00 days       
+5      1 / 20       0 / 10       0.99 days          ---                3.00 days       
+6      0 / 20       0 / 10       ---                ---                3.00 days       
+7      0 / 20       1 / 10       ---                0.89 days          3.00 days       
+8      1 / 20       1 / 10       2.13 days          2.43 days          3.00 days       
+9      3 / 20       1 / 10       2.53 days          2.48 days          3.00 days       
+10     0 / 20       2 / 10       ---                1.16 days          3.00 days       
+11     2 / 20       0 / 10       1.25 days          ---                3.00 days       
+12     2 / 20       0 / 10       0.93 days          ---                3.00 days       
+13     2 / 20       0 / 10       1.58 days          ---                3.00 days       
+14     1 / 20       1 / 10       2.11 days          1.06 days          3.00 days       
+15     0 / 20       3 / 10       ---                0.26 days          3.00 days       
+16     2 / 20       0 / 10       0.45 days          ---                3.00 days       
+17     1 / 20       1 / 10       0.54 days          1.01 days          3.00 days       
+18     3 / 20       0 / 10       0.31 days          ---                3.00 days       
+19     3 / 20       2 / 10       0.35 days          0.07 days          3.00 days       
+20     1 / 20       0 / 10       0.62 days          ---                3.00 days       
+21     2 / 20       0 / 10       0.34 days          ---                3.00 days       
+22     2 / 20       0 / 10       0.94 days          ---                3.00 days       
+23     1 / 20       1 / 10       2.78 days          0.24 days          3.00 days       
+24     1 / 20       0 / 10       1.09 days          ---                3.00 days       
+25     2 / 20       1 / 10       0.12 days          1.44 days          3.00 days       
+26     2 / 20       0 / 10       1.33 days          ---                3.00 days       
+27     1 / 20       0 / 10       0.67 days          ---                3.00 days       
+28     2 / 20       0 / 10       0.89 days          ---                3.00 days       
+29     1 / 20       1 / 10       1.10 days          2.40 days          3.00 days       
+30     3 / 20       0 / 10       0.41 days          ---                3.00 days       
+31     0 / 20       1 / 10       ---                2.08 days          3.00 days       
+32     1 / 20       0 / 10       2.60 days          ---                3.00 days       
+33     2 / 20       0 / 10       0.64 days          ---                3.00 days       
+34     2 / 20       0 / 10       1.27 days          ---                3.00 days       
+35     4 / 20       0 / 10       0.49 days          ---                3.00 days       
+36     0 / 20       1 / 10       ---                1.68 days          3.00 days       
+37     1 / 20       0 / 10       0.16 days          ---                3.00 days       
+38     2 / 20       0 / 10       1.80 days          ---                3.00 days       
+39     2 / 20       1 / 10       0.53 days          1.28 days          3.00 days       
+40     3 / 20       1 / 10       0.19 days          0.74 days          3.00 days       
+
+====================================================================================
+  SUMMARY — Perimeter Defense  |  39 Mics  |  40 Trials
+====================================================================================
+  Elephants poached    — Mean: 7.9%  |  Std: 5.0%  |  Min: 0%  |  Max: 20%
+  Poachers neutralized — Mean: 5.0%  |  Std: 7.2%  |  Min: 0%  |  Max: 30%
+  Time to 1st poach    — Mean: 0.99 days  |  Std: 0.78  |  Min: 0.03  |  Max: 2.78  (34/40 trials)
+  Time to 1st neutral  — Mean: 1.26 days  |  Std: 0.78  |  Min: 0.07  |  Max: 2.48  (16/40 trials)
+  Total sim-time       — Mean: 3.00 days  |  Std: 0.00  |  Min: 3.00  |  Max: 3.00
+====================================================================================
+
+Results saved to workspace variable: results

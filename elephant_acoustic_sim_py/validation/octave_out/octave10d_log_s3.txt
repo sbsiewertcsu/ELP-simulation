@@ -1,0 +1,23 @@
+Pre-computing position pools...
+Placing microphones (Strategy 3: Perimeter Defense, N=40)...
+
+========================================================
+  BATCH SIMULATION — DEBUG MODE
+========================================================
+  Strategy    : Perimeter Defense
+  Elephants   : 20
+  Poachers    : 10
+  Microphones : 40 (placed: 39)
+  Trials      : 12
+  Max sim-days: 10
+  SIM_DT      : 250.0 sim-seconds/step
+  Poach prob  : 0.85  |  Detect prob: 0.90
+========================================================
+
+Trial  Poached      Neutralized  Time 1st Poach     Time 1st Neutral   Total Time      
+------------------------------------------------------------------------------------
+1      7 / 20       0 / 10       1.82 days          ---                10.00 days      
+2      7 / 20       0 / 10       0.32 days          ---                10.00 days      
+3      5 / 20       1 / 10       1.29 days          1.52 days          10.00 days      
+4      5 / 20       1 / 10       5.21 days          1.69 days          10.00 days      
+5      5 / 20       2 / 10       0.65 days          4.61 days          10.00 days      

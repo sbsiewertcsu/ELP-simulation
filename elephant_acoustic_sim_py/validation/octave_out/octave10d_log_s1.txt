@@ -1,0 +1,23 @@
+Pre-computing position pools...
+Placing microphones (Strategy 1: Uniform Spread, N=40)...
+
+========================================================
+  BATCH SIMULATION — DEBUG MODE
+========================================================
+  Strategy    : Uniform Spread
+  Elephants   : 20
+  Poachers    : 10
+  Microphones : 40 (placed: 40)
+  Trials      : 12
+  Max sim-days: 10
+  SIM_DT      : 250.0 sim-seconds/step
+  Poach prob  : 0.85  |  Detect prob: 0.90
+========================================================
+
+Trial  Poached      Neutralized  Time 1st Poach     Time 1st Neutral   Total Time      
+------------------------------------------------------------------------------------
+1      5 / 20       3 / 10       0.28 days          2.71 days          10.00 days      
+2      5 / 20       5 / 10       0.45 days          0.53 days          10.00 days      
+3      4 / 20       6 / 10       0.86 days          0.75 days          10.00 days      
+4      1 / 20       8 / 10       1.03 days          0.48 days          10.00 days      
+5      5 / 20       7 / 10       0.35 days          1.47 days          10.00 days      
