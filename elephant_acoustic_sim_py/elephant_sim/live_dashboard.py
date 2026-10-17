@@ -308,7 +308,7 @@ class Dashboard:
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Live dashboard of the Dzanga-Sangha elephant acoustic simulation.")
-    ap.add_argument("--strategy", type=int, default=1, choices=[1, 2, 3, 4],
+    ap.add_argument("--strategy", type=int, default=1, choices=[1, 2, 3, 4, 5],
                     help="mic placement: 1=Uniform 2=Fortress 3=Perimeter 4=50/50 (default 1)")
     ap.add_argument("--mics", type=int, default=80, help="number of microphones (default 80)")
     ap.add_argument("--elephants", type=int, default=20)
