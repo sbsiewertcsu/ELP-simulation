@@ -189,3 +189,14 @@ The original `.m` code was run in GNU Octave 8.4 with its logic unchanged.
   to its old target, as in MATLAB.
 * A mic alert sends a ranger to **every** untargeted poacher within 200 m of that mic, not only the
   poachers that were actually detected.
+
+## Mic-count sweep (`run_sweep.py`)
+Finds how many mics (and which layout) leave the fewest elephants poached by the time the poachers are neutralized.
+```
+python run_sweep.py --runs 50 --dt 50 --workers 8 --out sweep.csv   # mics 10-160 step 5, strategies 1-5, + no-mics control
+python analyze_sweep.py sweep.csv sweep.png                          # mean poached +/- 95% CI per strategy, chart
+python compare_dt.py                                                 # time-step sensitivity table (results/dt_study)
+```
+Strategy 5 is a random mesh (a fresh random layout every trial). One CSV row is written per trial and an
+interrupted sweep resumes. Seeds depend only on (seed, mic count, trial), so strategies see the same random worlds.
+**Use `--dt 50` or smaller:** the default 250 s step underestimates poaching (see `results/README.md`).
