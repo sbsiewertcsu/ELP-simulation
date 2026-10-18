@@ -116,7 +116,7 @@ Trial  Poached      Neutralized  Time 1st Poach     Time 1st Neutral   Total Tim
 ```
 python -m pytest -q
 ```
-There are 31 tests. They include checks that the park geometry and all mic
+There are 34 tests. They include checks that the park geometry and all mic
 layouts are identical to the output of the original MATLAB code.
 
 ### Using it from your own Python code / Jupyter
