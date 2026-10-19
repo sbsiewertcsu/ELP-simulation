@@ -163,7 +163,22 @@ PLACERS = {
 }
 
 
-def place_mics(env: Environment, strategy: int, num_mics: int) -> np.ndarray:
+def place_mics_random(env: Environment, num_mics: int, rng, inside=None):
+    """Strategy 5 - random mesh: num_mics points drawn without replacement from
+    the valid in-park candidate grid.  Unlike 1-4 this is stochastic, so it needs
+    an rng (a layout is one random draw; average results over many layouts)."""
+    c = env.cfg
+    inside = inside or env.inside_setup
+    cands = _candidate_grid(c.width, c.height, inside, c.fps_grid_step)
+    if len(cands) == 0 or num_mics <= 0:
+        return np.zeros((0, 2))
+    idx = rng.choice(len(cands), size=min(num_mics, len(cands)), replace=False)
+    return cands[idx]
+
+
+def place_mics(env: Environment, strategy: int, num_mics: int, rng=None) -> np.ndarray:
+    if strategy == 5:
+        return place_mics_random(env, num_mics, rng if rng is not None else np.random.default_rng())
     if strategy not in PLACERS:
-        raise ValueError(f"Unknown mic strategy {strategy}; use 1, 2, 3 or 4")
+        raise ValueError(f"Unknown mic strategy {strategy}; use 1, 2, 3, 4 or 5")
     return PLACERS[strategy](env, num_mics)

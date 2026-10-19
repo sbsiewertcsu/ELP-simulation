@@ -15,12 +15,14 @@ STRATEGY_NAMES = {
     2: "Targeted Fortress",
     3: "Perimeter Defense",
     4: "Combination Fortress & Perimeter",   # called "50/50 Split" in the batch script
+    5: "Random Mesh",
 }
 BATCH_STRATEGY_NAMES = {
     1: "Uniform Spread",
     2: "Targeted Fortress",
     3: "Perimeter Defense",
     4: "50/50 Split",
+    5: "Random Mesh",
 }
 
 # Elephant behaviour states (MATLAB used the strings "ROAMING"/"SEEKING"/"WAITING")
