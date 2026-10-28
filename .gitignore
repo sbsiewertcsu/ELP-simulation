@@ -1,0 +1,4 @@
+# Keeps track of files and folders that don't need to be tracked by Git.
+# Useful for local development and testing.
+# Python environment
+venv/
