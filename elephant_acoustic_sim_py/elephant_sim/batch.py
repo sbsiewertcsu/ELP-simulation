@@ -199,7 +199,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(
         description="Batch (Monte-Carlo) mode of the Dzanga-Sangha elephant acoustic simulation.")
     ap.add_argument("--runs", type=int, default=50, help="Monte-Carlo trials per strategy (default 50)")
-    ap.add_argument("--strategy", type=int, default=1, choices=[1, 2, 3, 4],
+    ap.add_argument("--strategy", type=int, default=1, choices=[1, 2, 3, 4, 5],
                     help="1=Uniform 2=Fortress 3=Perimeter 4=50/50 (default 1)")
     ap.add_argument("--all-strategies", action="store_true",
                     help="run strategies 1-4 back to back and print a comparison table")
